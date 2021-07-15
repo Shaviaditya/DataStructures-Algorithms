@@ -1,4 +1,5 @@
-//CF=>1373A(Donut Shop)
+/*Q: https://codeforces.com/problemset/problem/1373/A
+*/
 #include<iostream>
 using namespace std;
 typedef long long int lli;
