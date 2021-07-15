@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+typedef long long int lli;
+#define loop(i,a,b) for(lli i=a;i<b;i++)
+int main(){
+    return 0;
+}
