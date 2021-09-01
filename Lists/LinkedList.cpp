@@ -56,8 +56,10 @@ void insert(node* &head,int val,int pos){
             temp = temp->next;
             pos--;
         }
-        n->next = ptr->next;
         ptr->next = n;
+        n->next = temp;
+        //n->next = ptr->next;
+        //ptr->next = n;
     }
 }
 void insertSorted(node* &head,int val){
@@ -80,14 +82,52 @@ void insertSorted(node* &head,int val){
         ptr->next = n;
     }
 }
+void deletion(node* &head,int val){
+    node* temp=head;
+    if(temp==NULL){
+        return;
+    }
+    if(temp->next==NULL){
+        node *rem = head;
+        head = temp->next;
+        delete rem;
+        return;
+    }
+    if(temp->data==val){
+        node* rem = head;
+        head = temp->next;
+        delete rem;
+    } else {
+        while(temp->next->data!=val){
+            temp = temp->next;
+        }
+        node* rem = temp->next;
+        temp->next = temp->next->next;
+        delete rem;
+    }
+}
+void deleteAlt(node* &head)
+{
+    node *ptr = head;
+    while (ptr != NULL)
+    {
+        node *ptr2 = ptr->next;
+        ptr = ptr2->next;
+        ptr2 = NULL;
+    }
+}
 int main(){
     node *head=NULL;
     insert(head,10,1);
     insert(head, 20, 2);
     insert(head, 40, 3);
     insert(head, 50, 4);
-    insertSorted(head, 30);
-    insertSorted(head, 95);
+    insert(head,60,5);
+    insert(head,70,6);
+    //insertSorted(head, 30);
+    //insertSorted(head, 95);
+    print(head);
+    deleteAlt(head);
     print(head);
     return 0;
 }

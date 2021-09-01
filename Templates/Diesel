@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define faststream  ios::sync_with_stdio(false);    cin.tie(NULL);  cout.tie(NULL);
+typedef long long int lli;
+#define ln(x)   x.length()
+#define YY cout<<"YES"<<endl
+#define NN cout<<"NO"<<endl
+#define all(x)  x.begin(),x.end()
+#define auto_input(v,x)  for(auto &x: v){  cin>>x;  }
+#define displayst(v,x)  for(auto x: v){  cout<<x<<" ";   }
+#define vec(v,n)    vector<lli> v(n)
+#define mapit       map<lli,lli> 
+#define f(i,a,b)    for(lli i=a;i<b;i++)
+const lli MOD = 1e9+7;
+int main(){
+    return 0;
+}
