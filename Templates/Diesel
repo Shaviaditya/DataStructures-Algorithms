@@ -13,5 +13,11 @@ typedef long long int lli;
 #define f(i,a,b)    for(lli i=a;i<b;i++)
 const lli MOD = 1e9+7;
 int main(){
+    #ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+    #endif
     return 0;
 }
+
+
