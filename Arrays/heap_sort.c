@@ -161,8 +161,6 @@ int main()
     int flag_value;
 
     int x;
-    printf("1906177\n");
-    printf("Hitesh Kumar\n\n");
     printf("0 --> Exit\n");
     printf("1 --> random array input\n");
     printf("2 --> Display the array. \n");
